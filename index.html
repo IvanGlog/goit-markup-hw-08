@@ -134,7 +134,12 @@
                 <h2 class="subtitle">Наша команда</h2>
                 <ul class="member-data-list list">
                     <li class="team-member">
-                        <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/igor-desk@1x.jpg 1x, ./images/igor-desk@2x.jpg 2x" media="(min-width: 1200px)"/>
+                            <source srcset="./images/igor-tablet@1x.jpg 1x, ./images/igor-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                            <source srcset="./images/igor-mob@1x.jpg 1x, ./images/igor-mob@2x.jpg 2x" media="(max-width: 767px)"/>
+                            <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                        </picture>
                         <div class="team-member__descr">
                             <h3  class="team-member__name">Ігор Дем'яненко</h3>
                             <p lang="en" class="team-member__position">Product Designer</p>
@@ -171,7 +176,12 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/olga-desk@1x.jpg 1x, ./images/olga-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/olga-tablet@1x.jpg 1x, ./images/olga-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/olga-mob@1x.jpg 1x, ./images/olga-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/olga.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                        </picture>
                         <div class="team-member__descr">
                             <h3 class="team-member__name">Ольга Рєпіна</h3>
                             <p lang="en" class="team-member__position">Frontend Developer</p>
@@ -208,7 +218,12 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mykola-desk@1x.jpg 1x, ./images/mykola-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/mykola-tablet@1x.jpg 1x, ./images/mykola-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mykola-mob@1x.jpg 1x, ./images/mykola-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/mykola.jpg" alt="Микола Тарасов" width="270" height="260">
+                        </picture>
                         <div class="team-member__descr">
                             <h3 class="team-member__name">Микола Тарасов</h3>
                             <p lang="en" class="team-member__position">Marketing</p>
@@ -245,7 +260,12 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img src="./images/mukhailo.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/mukhailo-desk@1x.jpg 1x, ./images/mukhailo-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/mukhailo-tablet@1x.jpg 1x, ./images/mukhailo-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mukhailo-mob@1x.jpg 1x, ./images/mukhailo-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                            <img src="./images/mukhailo.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                        </picture>
                         <div class="team-member__descr">
                             <h3 class="team-member__name">Михайло Єрмаков</h3>
                             <p lang="en" class="team-member__position">UI Designer</p>
@@ -464,6 +484,7 @@
     <!-- Script -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
