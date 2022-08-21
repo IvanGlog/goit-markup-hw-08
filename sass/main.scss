@@ -1,0 +1,30 @@
+@import './base/modern-normalize';
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/section';
+@import './base/container';
+@import './components/subtitle';
+
+@import './components/header';
+
+@import './components/solutions';
+
+@import './components/advantages';
+
+@import './components/work';
+
+@import './components/team';
+
+@import './components/regular-client';
+
+@import './components/footer';
+
+// Portfolio page components 
+@import './components/portfolio';
+
+// Modal window components
+@import './components/modal-window';
+@import './components/modal-form';
