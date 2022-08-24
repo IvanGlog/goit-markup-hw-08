@@ -7,6 +7,7 @@
             top: 0;
             left: 0;
             z-index: 1000;
+            
     
             opacity: 0;
             visibility: hidden;
@@ -38,6 +39,10 @@
     
         .mobile-menu-list__page {
             color: var(--main-black);
+        }
+
+        .mobile-menu__info {
+            margin-top: 302px;
         }
     
         .mobile-menu-close {
