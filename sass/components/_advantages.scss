@@ -1,8 +1,9 @@
 /* Advantages */
 
-.advantage-list {
-    display: flex;
-    justify-content: center;
+
+.advantage-picture-icon {
+    width: 70px;
+    height: 70px;
 }
 
 .advantage-name {
@@ -15,33 +16,12 @@
     margin-bottom: 10px;
 }
 
-/* .advantage-list-item::before {
-    display: inline-block;
-    content: "";
-    width: 270px;   
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
+.advantage-descr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-gray)
 }
-
-.advantage-list-item:first-child::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.advantage-list-item:nth-child(2)::before {
-    background-image: url(../images/clock.svg);
-}
-
-.advantage-list-item:nth-child(3)::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.advantage-list-item:last-child::before {
-    background-image: url(../images/astronaut.svg);
-} */
 
 .advantage-picture {
     height: 120px;
@@ -54,23 +34,60 @@
     align-items: center;
 }
 
-.advantage-picture-icon {
-    width: 70px;
-    height: 70px;
+@media screen and (max-width:767px) {
+
+    .advantage-name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .advantage-list-item {
+        width: 450px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
 }
 
-.advantage-list-item {
-    width: 270px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+@media screen and (min-width:768px) {
+    .advantage-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .advantage-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .advantage-list-item {
+        width: 354px;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    
+    .advantage-list-item {
+        width: 270px;
     }
 }
 
 
-.advantage-descr {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--main-gray)
-}
+
+
+
+
+
+
+
+
+
+
+
