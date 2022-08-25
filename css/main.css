@@ -319,10 +319,16 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -337,7 +343,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -347,12 +353,17 @@ img {
 }
 .subtitle {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 36px;
+  }
+}
 /* Header */
 @media screen and (max-width: 767px) {
   .menu {
@@ -883,21 +894,11 @@ img {
 }
 
 /* Regular Client */
-.regular-client__list {
-  margin-top: 50px;
-  display: flex;
-  gap: 30px;
-}
-
-.regular-client__item {
-  width: 170px;
-  height: 92px;
-}
-
-/* Написання класів!! */
-.regular-client__link:hover .regular-client__logo, .regular-client__link:focus .regular-client__logo, .regular-client__link:hover, .regular-client__link:focus {
-  fill: var(--main-blue);
-  border-color: var(--main-blue);
+.regular-client__logo {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+  transition: fill var(--transition-dur-funk);
 }
 
 .regular-client__link {
@@ -911,13 +912,45 @@ img {
   transition: border-color var(--transition-dur-funk);
 }
 
-.regular-client__logo {
-  width: 106px;
-  height: 60px;
-  fill: #AFB1B8;
-  transition: fill var(--transition-dur-funk);
+/* Написання класів!! */
+.regular-client__link:hover .regular-client__logo,
+.regular-client__link:focus .regular-client__logo,
+.regular-client__link:hover,
+.regular-client__link:focus {
+  fill: var(--main-blue);
+  border-color: var(--main-blue);
 }
 
+.regular-client__list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .regular-client__item {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .regular-client__item {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-client__list {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+  .regular-client__item {
+    width: 170px;
+    height: 92px;
+  }
+}
 /* Footer */
 .footer {
   background-color: var(--gray-background);
