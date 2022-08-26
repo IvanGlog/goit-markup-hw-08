@@ -222,10 +222,9 @@
 
         .tablet-footer {
             display: flex;
-            gap: 165px;
+            width: 100%;
+            justify-content: space-around;
         }
-
-
 
 }
 
