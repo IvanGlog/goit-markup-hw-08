@@ -9,7 +9,7 @@
 .modal-form-subtitle {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -34,7 +34,6 @@
         }
 }
 
-
 .modal-form-input:focus + .modal-form-input-icon {
     fill: var(--main-blue);
 }
@@ -47,7 +46,6 @@
             margin-bottom: 20px;
         }
 }
-
 
 .modal-form-input-descr {
     display: block;
@@ -86,8 +84,8 @@
 
     &::placeholder {
             font-weight: 400;
-            font-size: 12px;
-            line-height: 1.16;
+            font-size: 14px;
+            line-height: 1.14;
             letter-spacing: 0.01em;
     
             color: rgba(117, 117, 117, 0.5);
@@ -105,8 +103,8 @@
     align-items: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-gray);
     margin-bottom: 30px;
@@ -166,4 +164,23 @@
     &:focus {
             background-color: #188CE8;
         }
+}
+
+
+@media screen and (min-width:1200px) {
+    .modal-form-subtitle {
+        line-height: 1.15;
+    }
+
+    .modal-form-message {
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    }
+
+    .modal-form-check-descr {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }

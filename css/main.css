@@ -1284,11 +1284,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
-}
-
-.client-list-item {
-  flex-basis: calc((100% - 60px) / 3);
+  margin-top: 40px;
 }
 
 .client-list-item-link {
@@ -1355,6 +1351,48 @@ img {
   color: var(--main-gray);
 }
 
+@media screen and (max-width: 767px) {
+  .filter-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .filter-list-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .client-list-item {
+    width: 450px;
+  }
+  .client-picture {
+    width: 450px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-list-item {
+    min-width: 354px;
+    height: 440px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .client-picture {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (minx-width: 1200px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .client-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .client-picture {
+    width: 370px;
+    height: 294px;
+  }
+}
 /* Modal Window */
 .backdrop {
   position: fixed;
@@ -1375,8 +1413,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1414,6 +1452,12 @@ img {
   fill: var(--main-blue);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 /* ---------Modal Form---------- */
 .modal-form {
   display: flex;
@@ -1424,7 +1468,7 @@ img {
 .modal-form-subtitle {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-black);
@@ -1495,8 +1539,8 @@ img {
 }
 .modal-form-message::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -1509,8 +1553,8 @@ img {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-gray);
   margin-bottom: 30px;
@@ -1563,4 +1607,18 @@ img {
 }
 .madal-form-submit:hover, .madal-form-submit:focus {
   background-color: #188CE8;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-subtitle {
+    line-height: 1.15;
+  }
+  .modal-form-message::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .modal-form-check-descr {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }/*# sourceMappingURL=main.css.map */
