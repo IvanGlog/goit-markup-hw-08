@@ -604,6 +604,10 @@ img {
     position: relative;
     padding: 48px 40px;
     background-color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   .mobile-menu-list__item {
     margin-bottom: 32px;
@@ -614,9 +618,6 @@ img {
   }
   .mobile-menu-list__page {
     color: var(--main-black);
-  }
-  .mobile-menu__info {
-    margin-top: 302px;
   }
   .mobile-menu-close {
     position: absolute;
