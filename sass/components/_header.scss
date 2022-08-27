@@ -69,9 +69,12 @@
         align-items: center;
    }
 
+   .header-container .logo {
+       margin-right: 88px;
+   }
+
    .menu-list {
     display: flex;
-    margin-left: 88px;
    }
 
    .menu-list__page {
@@ -174,8 +177,7 @@
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.02em;
-    
-            display: flex;
+            
             align-items: center;
         }
     

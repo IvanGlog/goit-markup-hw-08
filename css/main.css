@@ -420,9 +420,11 @@ img {
     display: flex;
     align-items: center;
   }
+  .header-container .logo {
+    margin-right: 88px;
+  }
   .menu-list {
     display: flex;
-    margin-left: 88px;
   }
   .menu-list__page {
     position: relative;
@@ -501,7 +503,6 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: flex;
     align-items: center;
   }
   .menu-list__item {
@@ -607,6 +608,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
   }
   .mobile-menu-list__item {
     margin-bottom: 32px;
@@ -745,6 +747,8 @@ img {
   .solutions {
     background-size: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-bckgrnd-desk@1x.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -925,6 +929,8 @@ img {
 @media screen and (max-width: 767px) {
   .team-member {
     width: 450px;
+  }
+  .team-member:not(:last-child) {
     margin-bottom: 30px;
   }
   .team-member__image {
@@ -1223,7 +1229,7 @@ img {
     margin-left: 70px;
   }
   .footer-subscribe {
-    margin-left: 93px;
+    margin-left: auto;
   }
   .footer-subscribe__form {
     display: flex;

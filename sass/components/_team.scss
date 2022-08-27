@@ -71,7 +71,10 @@
 @media screen and (max-width:767px) {
     .team-member {
         width: 450px;
-        margin-bottom: 30px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     .team-member__image {
